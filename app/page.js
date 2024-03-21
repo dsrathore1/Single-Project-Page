@@ -1,7 +1,9 @@
-export default function Home() {
+import Home from "./(pages)/home/page";
+
+export default function Main() {
   return (
     <>
-      <h1 className="text-white">Hello World</h1>
+      <Home />
     </>
   );
 }
