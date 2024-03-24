@@ -15,6 +15,7 @@ const Nav = () => {
       >
         🎇 Projects 🎇
       </h1>
+      
     </div>
   );
 };

@@ -13,3 +13,19 @@ body {
 ::-webkit-scrollbar {
   display: none;
 }
+
+.mainContainer:hover .type {
+  display: none;
+  transition: all;
+  transition-timing-function: linear;
+  transition-duration: 2s;
+}
+
+.mainContainer:hover .name {
+  display: block;
+  transform: rotate(0);
+  margin-top: .5rem;
+  transition: all;
+  transition-timing-function: linear;
+  transition-duration: 2s;
+}
