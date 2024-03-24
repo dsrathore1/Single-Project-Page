@@ -24,8 +24,12 @@ body {
 .mainContainer:hover .name {
   display: block;
   transform: rotate(0);
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   transition: all;
   transition-timing-function: linear;
   transition-duration: 2s;
+}
+
+::selection {
+  background: rgb(147 51 234 / var(--tw-bg-opacity));
 }

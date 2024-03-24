@@ -3,7 +3,7 @@ import React from "react";
 import { Dawning_of_a_New_Day } from "next/font/google";
 import "../globals.css";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 const font = Dawning_of_a_New_Day({
   weight: ["400"],
@@ -12,13 +12,13 @@ const font = Dawning_of_a_New_Day({
 });
 
 const EachProject = ({ type, desc, id, name, img, link }) => {
-  const pathname = usePathname();
+  const router = useRouter();
   return (
     <div
       className="mainContainer sm:h-[40vh] sm:w-[10%] md:h-full md:w-full lg:h-[65vh] lg:w-[22%] flex flex-col item-center bg-[#6d6d6d41] rounded-lg backdrop-blur border-t-amber-200 border-t-2 border-opacity-15 p-3 cursor-pointer lg:hover:scale-[1.1] transition-all ease-linear duration-300 active:scale-[.9] mx-3 lg:mx-0"
       onClick={() => {
         // console.log(link);
-        pathname.replace(`${link}`);
+        router.push(link);
       }}
     >
       <Image

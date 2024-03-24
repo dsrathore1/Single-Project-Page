@@ -1,0 +1,27 @@
+name: Project Workflows
+run-name: Project flow number ${{github.run_number}}
+
+on:
+  push:
+    branches:
+      - "main"
+
+jobs:
+  build_next-app:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./
+
+    steps:
+      - name: Checkout the repository
+        run: actions/checkout@v3
+
+      - name: Setup Node.js
+        run: actions/setup-node@v4
+
+      - name: Install all dependencies
+        run: npm install
+
+      - name: Build the project
+        run: npm run build
