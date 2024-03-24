@@ -9,13 +9,13 @@ on:
 jobs:
   build_next-app:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout the repository
-        run: actions/checkout@v3
+        uses:  actions/checkout@v3
 
       - name: Setup Node.js
-        run: actions/setup-node@v4
+        uses: actions/setup-node@v4
 
       - name: Install all dependencies
         run: npm install
