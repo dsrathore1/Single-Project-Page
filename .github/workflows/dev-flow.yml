@@ -8,4 +8,26 @@ on:
 
 jobs:
   build_and_deploy:
-    
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+
+      - name: Install all dependencies
+        run: npm Install
+
+      - name: Build project
+        run: npm run build
+
+  test_done:
+    name: Display Test DONE 🌿
+    needs: build_and_deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Test Done!
+        run: echo "All DONE ❤️🌿"
