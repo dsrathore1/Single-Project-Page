@@ -1,10 +1,10 @@
 [
     {
-        "name": "Project1",
-        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem cupiditate debitis consectetur ducimus? Alias minus doloribus hic autem at libero!",
-        "type": "FullStack",
-        "img": "https://images.unsplash.com/photo-1510906594845-bc082582c8cc?q=80&w=2044&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "link": "link1"
+        "name": "Netflix-Clone",
+        "desc": "In this project, we'll create a Netflix clone using React.js, React Hooks, and Redux Toolkit. This clone will mimic some of the core functionalities of the Netflix platform, such as displaying a list of movies and viewing movie details. Redux Toolkit will be used for state management to efficiently manage.",
+        "type": "Frontend",
+        "img": "/assets/netflix-clone.png",
+        "link": "https://netflix-clone-mu-three-87.vercel.app/"
     },
     {
         "name": "Project2",

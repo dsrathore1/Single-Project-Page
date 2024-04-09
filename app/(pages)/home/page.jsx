@@ -10,7 +10,7 @@ export default function Home() {
       {/* end light */}
 
       {/* projects */}
-      <div className="flex flex-wrap transition-all duration-300 ease-in-out my-10 gap-12 justify-center items-center py-10">
+      <div className="flex flex-wrap transition-all duration-300 ease-in-out my-10 gap-12 justify-center items-center py-10 flex-1">
         {projectData
           // .filter((pro) => pro.name != "Project4")
           // .slice(0, 5)
