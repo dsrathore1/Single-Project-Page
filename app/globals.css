@@ -17,3 +17,45 @@ body {
 ::selection {
   background: rgb(147 51 234 / var(--tw-bg-opacity));
 }
+
+.nav-bar {
+  transition: all;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in-out;
+}
+
+@media screen and (max-width: 1200px) {
+  .nav-bar {
+    background: black;
+    height: 50vh;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .social-icons {
+    position: relative;
+    left: 0;
+    top: 5rem;
+  }
+
+  .search-container {
+    position: relative;
+    width: 100vw;
+    right: 0;
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8rem;
+  }
+
+  .search-icon {
+    display: none;
+  }
+
+  .search-bar {
+    width: 50%;
+  }
+}

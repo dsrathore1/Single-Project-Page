@@ -1,10 +1,11 @@
 [
     {
-        "name": "Netflix-Clone",
+        "name": "Netflix Clone",
         "desc": "In this project, we'll create a Netflix clone using React.js, React Hooks, and Redux Toolkit. This clone will mimic some of the core functionalities of the Netflix platform, such as displaying a list of movies and viewing movie details. Redux Toolkit will be used for state management to efficiently manage.",
         "type": "Frontend",
         "img": "/assets/netflix-clone.png",
-        "link": "https://netflix-clone-mu-three-87.vercel.app/"
+        "link": "/detail_pages/netflix",
+        "slug": "netflix"
     },
     {
         "name": "Project2",

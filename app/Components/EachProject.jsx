@@ -11,6 +11,8 @@ const font = Dawning_of_a_New_Day({
   weight: ["400"],
   style: ["normal"],
   subsets: ["latin"],
+  display: "swap",
+  adjustFontFallback: false,
 });
 
 const EachProject = ({ type, desc, name, img, link }) => {
@@ -19,9 +21,8 @@ const EachProject = ({ type, desc, name, img, link }) => {
     <motion.div
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ ease: "linear", duration: .5   }}
-      className="mainContainer sm:h-[40vh] sm:w-[10%] md:h-full md:w-full lg:h-[65vh] lg:w-[22%] flex flex-col item-center bg-[#6d6d6d41] rounded-lg backdrop-blur border-t-amber-200 border-t-2 border-opacity-15 p-3 cursor-pointer lg:hover:scale-[1.1] transition-all ease-in-out duration-300 active:scale-[.9] mx-3 lg:mx-0 group"
+      transition={{ ease: "linear", duration: 0.5 }}
+      className="mainContainer sm:h-[40vh] sm:w-[10%] md:h-full md:w-full lg:h-[65vh] lg:w-[22%] flex flex-col item-center bg-[#6d6d6d41] rounded-lg backdrop-blur border-t-amber-200 border-t-2 border-opacity-15 p-3 cursor-pointer lg:hover:scale-[1.1] transition-all ease-linear duration-300 active:scale-[.9] mx-3 lg:mx-0 group"
       onClick={() => {
         // console.log(link);
         router.push(link);
