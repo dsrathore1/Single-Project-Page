@@ -1,0 +1,22 @@
+version: "3.8"
+
+volumes:
+  pgvol:
+
+services:
+  pg-db:
+    image: "postgres:alpine3.19"
+    restart: "always"
+    container_name: "Postgres-Container"
+    volumes:
+      - pgvol:/var/lib/postgres/data
+    ports:
+      - 5432:5432
+    expose:
+      - 5432
+    stdin_open: true
+
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: admin123
